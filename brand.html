@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICW Brand Reference</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+:root{
+  --paper:#F3F4F0; --ink:#191D1A; --spruce:#1B5244; --spruce-deep:#123C31;
+  --stone:#61675F; --rule:#D7DAD1; --tint:#EBEEE7;
+  --display:"Archivo",system-ui,Arial,sans-serif;
+  --serif:"Source Serif 4",Georgia,serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--serif);font-size:1.05rem;line-height:1.6}
+.wrap{max-width:900px;margin:0 auto;padding:48px 24px 80px}
+h1,h2,h3{font-family:var(--display);margin:0;line-height:1.15}
+h1{font-size:2rem;letter-spacing:-.015em}
+h2{font-size:1.15rem;color:var(--spruce);padding-bottom:12px;border-bottom:1px solid var(--rule);margin:56px 0 24px}
+p{margin:0 0 14px;max-width:68ch}
+.lockup{margin:40px 0 8px;font-family:var(--display);font-weight:700;font-size:2.6rem;letter-spacing:-.02em}
+.lockup .mark{color:var(--spruce);font-size:1.2em;margin-right:8px;vertical-align:-0.05em}
+.sub{color:var(--stone);font-family:var(--display);font-size:.95rem}
+.swatches{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:14px}
+.sw{border:1px solid var(--rule);border-radius:4px;overflow:hidden;background:#fff}
+.sw .chip{height:74px}
+.sw .label{padding:10px 12px;font-family:var(--display);font-size:.8rem;line-height:1.45}
+.sw .label b{display:block;font-size:.85rem}
+.type-demo{border:1px solid var(--rule);border-radius:4px;background:#fff;padding:24px 28px;margin-bottom:14px}
+.type-demo .name{font-family:var(--display);font-size:.8rem;color:var(--stone);margin-bottom:8px}
+code,pre{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.82rem}
+pre{background:#fff;border:1px solid var(--rule);border-radius:4px;padding:18px 20px;overflow-x:auto;line-height:1.5}
+table.rules{border-collapse:collapse;width:100%;font-size:.95rem}
+table.rules td{border-top:1px solid var(--rule);padding:10px 12px 10px 0;vertical-align:top}
+table.rules td:first-child{font-family:var(--display);font-weight:600;width:34%}
+.sig-preview{background:#fff;border:1px solid var(--rule);border-radius:4px;padding:24px;margin-bottom:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Infinite Codeworks brand reference</h1>
+  <p class="sub">v1, Sep 2026. Source of truth for the website, email footers and documents.</p>
+
+  <h2>Mark and wordmark</h2>
+  <div class="lockup"><span class="mark">&infin;</span>Infinite Codeworks</div>
+  <p class="sub">The infinity mark in spruce, wordmark in ink, set in Archivo Bold. The mark can stand alone as an avatar or favicon: spruce &infin; on paper, or paper &infin; on deep spruce.</p>
+
+  <h2>Colour</h2>
+  <div class="swatches">
+    <div class="sw"><div class="chip" style="background:#F3F4F0"></div><div class="label"><b>Paper</b>#F3F4F0<br>Backgrounds</div></div>
+    <div class="sw"><div class="chip" style="background:#191D1A"></div><div class="label"><b>Ink</b>#191D1A<br>Text</div></div>
+    <div class="sw"><div class="chip" style="background:#1B5244"></div><div class="label"><b>Spruce</b>#1B5244<br>Accent, links, the mark</div></div>
+    <div class="sw"><div class="chip" style="background:#123C31"></div><div class="label"><b>Deep spruce</b>#123C31<br>Dark panels, hover</div></div>
+    <div class="sw"><div class="chip" style="background:#61675F"></div><div class="label"><b>Stone</b>#61675F<br>Secondary text</div></div>
+    <div class="sw"><div class="chip" style="background:#D7DAD1"></div><div class="label"><b>Rule</b>#D7DAD1<br>Hairlines, borders</div></div>
+    <div class="sw"><div class="chip" style="background:#EBEEE7"></div><div class="label"><b>Tint</b>#EBEEE7<br>Callout backgrounds</div></div>
+  </div>
+
+  <h2>Type</h2>
+  <div class="type-demo">
+    <div class="name">Display and headings: Archivo (600 or 700, slight negative tracking)</div>
+    <div style="font-family:var(--display);font-weight:700;font-size:1.7rem;letter-spacing:-.02em">Turn complex technology into plain decisions.</div>
+  </div>
+  <div class="type-demo">
+    <div class="name">Body: Source Serif 4 (400, 600 for emphasis)</div>
+    <div>Body copy is set in Source Serif 4. In Word or Outlook where it is not installed, use Georgia. For headings where Archivo is unavailable, use Arial Bold.</div>
+  </div>
+
+  <h2>Documents (proposals, SoWs, reports)</h2>
+  <table class="rules">
+    <tr><td>Title and headings</td><td>Archivo Bold (or Arial Bold), ink. Heading 2 in spruce is permitted for section leads.</td></tr>
+    <tr><td>Body</td><td>Source Serif 4 or Georgia, 10.5 to 11pt, ink.</td></tr>
+    <tr><td>Accent</td><td>Spruce #1B5244 only: rules, table header fills (with paper text), links. Never more than one accent colour per document.</td></tr>
+    <tr><td>Tables</td><td>Hairline borders in #D7DAD1, header row deep spruce with paper text.</td></tr>
+    <tr><td>Callouts</td><td>Tint #EBEEE7 background with a 3pt spruce left border.</td></tr>
+    <tr><td>Footer</td><td>Stone text: Infinite Codeworks Ltd, registered in England and Wales 07242790.</td></tr>
+  </table>
+
+  <h2>Email signature</h2>
+  <div class="sig-preview">
+    <table cellpadding="0" cellspacing="0" border="0" style="font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#191D1A;line-height:1.5">
+      <tr>
+        <td style="border-left:3px solid #1B5244;padding-left:14px">
+          <strong style="font-size:14px">Ben Burch</strong><br>
+          <span style="color:#61675F">Infinite Codeworks. Technology strategy for businesses facing the AI shift.</span><br>
+          <a href="mailto:ben@infinitecodeworks.com" style="color:#1B5244;text-decoration:none">ben@infinitecodeworks.com</a>
+          &nbsp;&nbsp;<a href="https://www.infinitecodeworks.com" style="color:#1B5244;text-decoration:none">infinitecodeworks.com</a>
+          &nbsp;&nbsp;<a href="https://www.linkedin.com/in/burchben/" style="color:#1B5244;text-decoration:none">LinkedIn</a>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <p class="sub">Copy the block below into the Outlook signature editor (or paste the rendered version above directly).</p>
+  <pre>&lt;table cellpadding="0" cellspacing="0" border="0" style="font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#191D1A;line-height:1.5"&gt;
+  &lt;tr&gt;
+    &lt;td style="border-left:3px solid #1B5244;padding-left:14px"&gt;
+      &lt;strong style="font-size:14px"&gt;Ben Burch&lt;/strong&gt;&lt;br&gt;
+      &lt;span style="color:#61675F"&gt;Infinite Codeworks. Technology strategy for businesses facing the AI shift.&lt;/span&gt;&lt;br&gt;
+      &lt;a href="mailto:ben@infinitecodeworks.com" style="color:#1B5244;text-decoration:none"&gt;ben@infinitecodeworks.com&lt;/a&gt;
+      &amp;nbsp;&amp;nbsp;&lt;a href="https://www.infinitecodeworks.com" style="color:#1B5244;text-decoration:none"&gt;infinitecodeworks.com&lt;/a&gt;
+      &amp;nbsp;&amp;nbsp;&lt;a href="https://www.linkedin.com/in/burchben/" style="color:#1B5244;text-decoration:none"&gt;LinkedIn&lt;/a&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</pre>
+
+  <h2>Voice</h2>
+  <table class="rules">
+    <tr><td>Plain English</td><td>If it cannot be said plainly, it is not ready. No jargon a board would not use.</td></tr>
+    <tr><td>Evidence over adjectives</td><td>Claims carry numbers, names or working prototypes. Prefer "measured" to "world-class".</td></tr>
+    <tr><td>Punctuation</td><td>No em-dashes. Commas, colons or full stops. No Oxford comma. Dates as DD Mon.</td></tr>
+    <tr><td>Endings</td><td>Every offer states its finish. Fixed fee, fixed finish, ends by design.</td></tr>
+  </table>
+
+</div>
+</body>
+</html>

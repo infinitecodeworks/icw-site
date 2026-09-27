@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Infinite Codeworks</title>
+<meta name="description" content="Independent technology and AI strategy for businesses facing the AI shift. Board-level advice in plain English, delivered in weeks, proven with working prototypes. Ben Burch, Infinite Codeworks.">
+<meta property="og:title" content="Infinite Codeworks">
+<meta property="og:description" content="Technology strategy for businesses facing the AI shift. Board-level advice in plain English, proven with working prototypes.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.infinitecodeworks.com">
+<meta property="og:image" content="https://www.infinitecodeworks.com/ben.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://www.infinitecodeworks.com/">
+<meta name="theme-color" content="#123C31">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23123C31'/%3E%3Ctext x='32' y='45' font-size='38' font-family='Arial,sans-serif' font-weight='bold' text-anchor='middle' fill='%23F3F4F0'%3E%E2%88%9E%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Infinite Codeworks",
+  "url": "https://www.infinitecodeworks.com",
+  "description": "Independent technology and AI strategy for businesses facing the AI shift. AI Strategy Sprints and fractional strategy advisory.",
+  "areaServed": ["United Kingdom", "United States"],
+  "founder": {
+    "@type": "Person",
+    "name": "Ben Burch",
+    "alumniOf": "University of Oxford",
+    "sameAs": [
+      "https://www.linkedin.com/in/burchben/",
+      "https://www.myjourneytodeathvalley.com/"
+    ]
+  }
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+:root{
+  --paper:#F3F4F0;
+  --ink:#191D1A;
+  --spruce:#1B5244;
+  --spruce-deep:#123C31;
+  --stone:#61675F;
+  --rule:#D7DAD1;
+  --display:"Archivo",system-ui,-apple-system,"Helvetica Neue",Arial,sans-serif;
+  --serif:"Source Serif 4",Georgia,"Times New Roman",serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--serif);
+  font-size:1.075rem;
+  line-height:1.65;
+}
+.wrap{max-width:1020px;margin:0 auto;padding:0 24px}
+a{color:var(--spruce);text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{color:var(--spruce-deep)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--spruce);outline-offset:3px;border-radius:2px}
+h1,h2,h3{font-family:var(--display);line-height:1.12;text-wrap:balance;margin:0}
+p{margin:0}
+img{max-width:100%}
+
+/* header */
+header{border-bottom:1px solid var(--rule)}
+.bar{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding-block:20px;flex-wrap:wrap}
+.wordmark{font-family:var(--display);font-weight:700;font-size:1rem;letter-spacing:.01em;color:var(--ink);text-decoration:none}
+.wordmark .mark{color:var(--spruce);font-size:1.25em;font-weight:700;margin-right:4px;vertical-align:-0.06em}
+.bar a.mail{font-family:var(--display);font-size:.9rem;font-weight:500}
+
+/* hero */
+.hero{padding-block:72px 64px}
+.hero-grid{display:grid;grid-template-columns:7fr 4fr;gap:56px;align-items:center}
+.hero h1{
+  font-size:clamp(2.4rem,5.6vw,4rem);
+  font-weight:700;
+  letter-spacing:-.022em;
+  max-width:17ch;
+}
+.hero .lede{
+  margin-top:26px;
+  max-width:54ch;
+  font-size:1.18rem;
+  line-height:1.6;
+}
+.hero .cta{margin-top:34px;display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.hero figure{margin:0}
+.hero img{width:100%;height:auto;display:block;border-radius:4px}
+.hero figcaption{margin-top:10px;font-size:.85rem;color:var(--stone);font-family:var(--display)}
+.btn{
+  display:inline-block;
+  font-family:var(--display);
+  font-weight:600;
+  font-size:.95rem;
+  padding:13px 22px;
+  background:var(--spruce);
+  color:var(--paper);
+  text-decoration:none;
+  border-radius:3px;
+}
+.btn:hover{background:var(--spruce-deep);color:var(--paper)}
+.cta .alt{font-family:var(--display);font-size:.95rem;font-weight:500}
+
+/* credibility strip */
+.creds{border-top:1px solid var(--ink);border-bottom:1px solid var(--rule)}
+.creds .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;padding-block:34px 40px}
+.creds h3{font-size:1.05rem;font-weight:600;letter-spacing:-.005em}
+.creds p{margin-top:8px;font-size:.95rem;color:var(--stone);line-height:1.55}
+
+/* sections */
+section{padding:72px 0 0}
+.kicker{
+  font-family:var(--display);
+  font-weight:600;
+  font-size:.9rem;
+  color:var(--spruce);
+  padding-bottom:14px;
+  border-bottom:1px solid var(--rule);
+  margin-bottom:36px;
+}
+.statement{
+  font-size:clamp(1.3rem,2.6vw,1.7rem);
+  line-height:1.5;
+  max-width:34ch;
+  font-weight:400;
+}
+.statement strong{font-weight:600;color:var(--spruce-deep)}
+
+/* offers */
+.offers{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.offer h3{font-size:1.5rem;font-weight:700;letter-spacing:-.015em}
+.offer .tag{margin-top:6px;font-family:var(--display);font-size:.9rem;font-weight:500;color:var(--spruce)}
+.offer ul{margin:22px 0 0;padding:0;list-style:none}
+.offer li{
+  padding:11px 0;
+  border-top:1px solid var(--rule);
+  font-size:1rem;
+  line-height:1.55;
+}
+.offer li:last-child{border-bottom:1px solid var(--rule)}
+.offer .note{margin-top:18px;font-style:italic;color:var(--stone);font-size:.98rem}
+.partners{
+  margin-top:48px;
+  padding:24px 28px;
+  border-left:3px solid var(--spruce);
+  background:#EBEEE7;
+  max-width:70ch;
+  font-size:1rem;
+}
+
+/* full-bleed banner */
+.banner{margin-top:72px}
+.banner img{width:100%;height:340px;object-fit:cover;display:block}
+@media (max-width:760px){.banner img{height:200px}}
+
+/* how i work */
+.method{display:grid;grid-template-columns:1fr 1fr;gap:36px 56px}
+.method h3{font-size:1.1rem;font-weight:600}
+.method p{margin-top:8px;color:var(--stone);font-size:.98rem;line-height:1.6}
+
+/* quotes */
+blockquote{
+  margin:0;
+  padding:30px 0;
+  border-top:1px solid var(--rule);
+  max-width:75ch;
+}
+blockquote:last-child{border-bottom:1px solid var(--rule)}
+blockquote p{font-size:1.1rem;line-height:1.6;font-style:italic}
+blockquote cite{
+  display:block;
+  margin-top:12px;
+  font-style:normal;
+  font-family:var(--display);
+  font-weight:600;
+  font-size:.9rem;
+}
+
+/* about */
+.about{display:grid;grid-template-columns:5fr 3fr;gap:56px;align-items:start}
+.about .text p{max-width:62ch;margin-bottom:20px}
+.about .text p:last-child{margin-bottom:0}
+.about figure{margin:0}
+.about img{width:100%;height:auto;display:block;border-radius:4px}
+.about figcaption{margin-top:10px;font-size:.85rem;color:var(--stone);font-family:var(--display)}
+.pull{
+  margin-top:28px;
+  padding-top:22px;
+  border-top:1px solid var(--ink);
+  font-size:1.25rem;
+  line-height:1.5;
+  font-weight:600;
+  max-width:44ch;
+}
+
+/* elsewhere */
+.elsewhere{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.elsewhere h3{font-size:1.1rem;font-weight:600}
+.elsewhere p{margin-top:8px;color:var(--stone);font-size:.98rem}
+.elsewhere a{font-family:var(--display);font-size:.95rem;font-weight:500}
+
+/* contact: the one bold colour move */
+.contact{margin-top:80px;background:var(--spruce-deep);color:var(--paper)}
+.contact .inner{padding-block:72px 80px}
+.contact h2{font-size:clamp(1.9rem,4vw,2.7rem);font-weight:700;letter-spacing:-.02em;max-width:22ch;color:var(--paper)}
+.contact p{margin-top:18px;max-width:52ch;color:#C9D6CE}
+.contact .cta{margin-top:30px;display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+.contact .btn{background:var(--paper);color:var(--spruce-deep)}
+.contact .btn:hover{background:#fff;color:var(--spruce-deep)}
+.contact .alt{color:#C9D6CE}
+.contact .alt:hover{color:#fff}
+.contact .alt a{color:#fff}
+
+/* contact form */
+.cform{margin-top:32px;display:grid;gap:16px;max-width:560px}
+.cform label{display:block;font-family:var(--display);font-size:.85rem;font-weight:500;color:#C9D6CE;margin-bottom:6px}
+.cform input,.cform textarea{
+  width:100%;
+  padding:12px 14px;
+  border:1px solid rgba(243,244,240,.3);
+  border-radius:3px;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--display);
+  font-size:.95rem;
+}
+.cform input:focus,.cform textarea:focus{outline:2px solid #C9D6CE;outline-offset:1px}
+.cform button.btn{border:0;cursor:pointer;font-family:var(--display)}
+.form-status{font-family:var(--display);font-size:.9rem;color:#C9D6CE;min-height:1.2em;margin:0}
+.hp{position:absolute;left:-5000px;top:auto;height:1px;overflow:hidden}
+.mail a,[data-em] a{color:inherit;font-family:var(--display)}
+
+/* footer */
+footer{background:var(--spruce-deep);border-top:1px solid rgba(243,244,240,.25);padding:24px 0 40px}
+footer .row{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:.85rem;color:#9DB3A9;font-family:var(--display)}
+footer a{color:#9DB3A9}
+
+@media (max-width:760px){
+  .hero{padding-block:48px}
+  .hero-grid{grid-template-columns:1fr;gap:36px}
+  .hero figure{max-width:420px}
+  .creds .grid{grid-template-columns:1fr;gap:24px;padding-block:28px 32px}
+  .offers,.method,.elsewhere{grid-template-columns:1fr;gap:40px}
+  .about{grid-template-columns:1fr}
+  section{padding:56px 0 0}
+  .banner{margin-top:56px}
+  .contact{margin-top:64px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="wordmark" href="#top"><span class="mark">&infin;</span>Infinite Codeworks</a>
+    <span class="mail" data-em>ben [at] infinitecodeworks.com</span>
+  </div>
+</header>
+
+<main id="top">
+
+  <div class="wrap hero">
+    <div class="hero-grid">
+      <div>
+        <h1>Technology strategy for businesses facing the AI shift.</h1>
+        <p class="lede">Independent, board-level advice that translates what is coming in technology into action for your business: threats caught early and turned into strengths, opportunities made tangible, decisions in plain English. Delivered in weeks rather than quarters, proven with working prototypes rather than decks.</p>
+        <div class="cta">
+          <a class="btn" href="#contact">Start a conversation</a>
+          <a class="alt" href="https://www.linkedin.com/in/burchben/">LinkedIn</a>
+        </div>
+      </div>
+      <figure>
+        <!-- PLACEHOLDER hotlinked from myjourneytodeathvalley.com. Before launch, save this image locally as ben.jpg and change src to "ben.jpg". -->
+        <img src="https://images.squarespace-cdn.com/content/v1/66cc6422470a3e60e15b79a0/1853df50-cc79-4be8-be7d-2b5323b874e6/JC_S0741.jpg" alt="Ben Burch" onerror="this.parentElement.style.display='none'">
+        <figcaption>Ben Burch, founder</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="creds">
+    <div class="wrap grid">
+      <div>
+        <h3>Oxford University engineer</h3>
+        <p>MEng in engineering from Oxford University. Rowed for Great Britain and led the winning 2002 Boat Race crew as president of the university boat club.</p>
+      </div>
+      <div>
+        <h3>Twenty years making technology pay</h3>
+        <p>Risk systems at RBS through the financial crisis. A manufacturing business turned from loss to profit as operations director. Two decades of systems, integration and applied AI across manufacturing, healthtech, software and the third sector.</p>
+      </div>
+      <div>
+        <h3>Proven endurance: Badwater 135</h3>
+        <p>In July 2026 I finished Badwater 135, the world's toughest footrace: 135 nonstop miles across Death Valley in 50&deg;C heat, open to 100 invited athletes a year. The same discipline runs through my client work. Prepare properly, measure everything, finish.</p>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <p class="statement">Your customers, your competitors and your own team are already using AI. The question is no longer whether it changes your business. It is <strong>what you do about it, in what order, and how you know it is working.</strong> That deserves better than a vendor pitch or a two hundred page deck.</p>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="wrap">
+      <div class="kicker">Work with me</div>
+      <div class="offers">
+        <div class="offer">
+          <h3>AI Strategy Sprint</h3>
+          <p class="tag">Three weeks. One strategic question answered.</p>
+          <ul>
+            <li>A named question: what does AI mean for our business model, our operation, our position in the market</li>
+            <li>Evidence drawn from your own customers, data and market, not analyst noise</li>
+            <li>Options ranked with honest economics, including the case for doing nothing</li>
+            <li>A recommendation your board can act on, written in plain English</li>
+            <li>A working prototype of the answer, running on your real problem</li>
+          </ul>
+          <p class="note">Fixed fee, fixed finish. The engagement ends by design.</p>
+        </div>
+        <div class="offer">
+          <h3>Fractional Strategy Advisor</h3>
+          <p class="tag">Board-level counsel, defined days each month.</p>
+          <ul>
+            <li>A clear read on the direction of travel: where technology is heading and what it means for your people, your customers and your market</li>
+            <li>Technology and AI strategy that keeps pace as the market moves</li>
+            <li>An independent voice that keeps transformation honest</li>
+            <li>Steering delivery partners and vendors so you get what you were promised</li>
+            <li>Help defining, hiring and shaping your permanent technology leadership</li>
+          </ul>
+          <p class="note">No delivery tail. I advise, challenge and shape. Your team and partners build.</p>
+        </div>
+      </div>
+      <div class="partners">When strategy calls for build work, I architect and steer while trusted delivery partners or your own team do the building. You choose who builds, and the advice stays independent.</div>
+    </div>
+  </section>
+
+  <section id="how">
+    <div class="wrap">
+      <div class="kicker">How I work</div>
+      <div class="method">
+        <div>
+          <h3>Plain English</h3>
+          <p>I translate complex technology into words a board can act on. If a recommendation cannot be said plainly, it is not ready.</p>
+        </div>
+        <div>
+          <h3>The whole business, not just IT</h3>
+          <p>AI questions rarely respect departmental lines. I work across the commercial model, operations and technology, so strategy arrives as one answer rather than an IT plan.</p>
+        </div>
+        <div>
+          <h3>Evidence first</h3>
+          <p>I use my own tooling to capture and rank opportunities inside your business. Every recommendation carries its assumptions and its expected value, so it can be checked.</p>
+        </div>
+        <div>
+          <h3>Prototypes over decks</h3>
+          <p>I build fast. Watching the answer run on your real problem beats reading about it, and it removes the argument before it starts.</p>
+        </div>
+        <div>
+          <h3>Delivery through partners</h3>
+          <p>I do not carry a delivery team you have to feed. When something should be built, I specify it, steer it and hold it to the plan.</p>
+        </div>
+        <div>
+          <h3>Endings by design</h3>
+          <p>Every engagement has a defined finish and an acceptance event. If it should continue, we decide that deliberately, not by drift.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="proof">
+    <div class="wrap">
+      <div class="kicker">What clients say</div>
+      <div class="quotes">
+        <blockquote>
+          <p>&ldquo;Your insights into how the market is evolving has given me great confidence as we built out our strategy. The way you can understand and translate complex technical challenges into manageable tasks is really excellent.&rdquo;</p>
+          <cite>Steven Castillo</cite>
+        </blockquote>
+        <blockquote>
+          <p>&ldquo;Ben Burch is a valued consultant who offers intellect, vision, strategy and simple actions. His knowledge of the tech business and his experience of how organisations like ours work has been invaluable.&rdquo;</p>
+          <cite>Kim Jenkins</cite>
+        </blockquote>
+        <blockquote>
+          <p>&ldquo;Ben takes a pragmatic and knowledgeable approach. He combines a strong technical understanding with a lot of real-world business experience. He finds solutions quickly and is adept at working closely with development teams to get results.&rdquo;</p>
+          <cite>Rob Woodhead</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <div class="banner">
+    <!-- PLACEHOLDER hotlinked from myjourneytodeathvalley.com. Before launch, save locally as deathvalley.jpg and change src. -->
+    <img src="https://images.squarespace-cdn.com/content/v1/66cc6422470a3e60e15b79a0/def01f72-1e74-45c9-bb1c-f27a20c6503b/deathvalley.jpg" alt="A long straight road through Death Valley" onerror="this.style.display='none'">
+  </div>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="kicker">About Ben</div>
+      <div class="about">
+        <div class="text">
+          <p>I read engineering at Oxford University, rowed for Great Britain and was president of the Oxford crew that won the 2002 Boat Race as underdogs. Injury ended the rowing. The habit of preparing properly for hard things never left.</p>
+          <p>Since then I have spent twenty years where technology meets money. At RBS I worked in counterparty risk through the financial crisis, building the bank's first consolidated trade repository and analysing derivative selection on a &pound;20bn asset protection scheme. As operations director of a design-led manufacturing business I helped take it from loss-making to a &pound;2.5M turnover and solid profit. Since 2012 I have run Infinite Codeworks, designing systems, integrations and now AI capability for businesses from precision manufacturers to US healthtech.</p>
+          <p>The thread through all of it is the same: complex, high-stakes problems made plain, decided quickly and made to pay. I am the person in the room who can hold the engineering detail and the board conversation at the same time, and who would rather show you a working answer than describe one. Increasingly the work is about direction of travel: reading where technology is going, broadly rather than through a narrow technical lens, and what it means right now for the people who run, work in and buy from a business. The job is then to turn that reading into action a business can take this quarter: risks removed, threats turned into strengths, opportunities made real.</p>
+          <p>In 2026 I ran Badwater 135. I also founded a charity whose community programmes carry peer-reviewed evidence from the University of Bristol of improving social connection and wellbeing. Both inform how I advise.</p>
+          <p class="pull">Technology should be judged by what it does for people, whether that is a savings ledger or a loneliness measure. AI's job is to remove the drudgery so people can do the human work.</p>
+        </div>
+        <figure>
+          <!-- PLACEHOLDER hotlinked from myjourneytodeathvalley.com. Before launch, save locally as ben-race.jpg and change src. -->
+          <img src="https://images.squarespace-cdn.com/content/v1/66cc6422470a3e60e15b79a0/396d9108-4970-4d84-8054-208f62dd3c42/_MG_4868.jpg" alt="Ben high-fiving spectators during a race" onerror="this.parentElement.style.display='none'">
+          <figcaption>People first, always</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="elsewhere">
+    <div class="wrap">
+      <div class="kicker">Elsewhere</div>
+      <div class="elsewhere">
+        <div>
+          <h3>Professional notes</h3>
+          <p>Short observations on AI, strategy and what is actually working, from live client work.</p>
+          <a href="https://www.linkedin.com/in/burchben/">Ben on LinkedIn</a>
+        </div>
+        <div>
+          <h3>The running</h3>
+          <p>The training, the races and the writing, including the road to Badwater 135.</p>
+          <a href="https://www.myjourneytodeathvalley.com/">My Journey to Death Valley</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap inner">
+      <h2>If you are facing the AI question, let's talk.</h2>
+      <p>A first conversation costs nothing and usually tells us both whether there is a real piece of work. Remote is fine, in person is better.</p>
+      <form id="cform" class="cform" data-webhook="" novalidate>
+        <div>
+          <label for="cf-name">Name</label>
+          <input id="cf-name" type="text" autocomplete="name" required>
+        </div>
+        <div>
+          <label for="cf-email">Email</label>
+          <input id="cf-email" type="email" autocomplete="email" required>
+        </div>
+        <div>
+          <label for="cf-msg">What are you facing?</label>
+          <textarea id="cf-msg" rows="4" required></textarea>
+        </div>
+        <div class="hp" aria-hidden="true">
+          <label for="cf-web">Website</label>
+          <input id="cf-web" type="text" tabindex="-1" autocomplete="off">
+        </div>
+        <div>
+          <button class="btn" type="submit">Send message</button>
+        </div>
+        <p class="form-status" id="cf-status" role="status"></p>
+      </form>
+      <div class="cta">
+        <span class="alt">Or email directly: <span data-em>ben [at] infinitecodeworks.com</span></span>
+        <a class="alt" href="https://www.linkedin.com/in/burchben/">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap row">
+    <span>Infinite Codeworks Ltd. Registered in England and Wales, 07242790.</span>
+    <span>&copy; 2026 Infinite Codeworks Ltd</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  // Email links assembled at runtime to reduce scraper harvesting.
+  var addr = ['ben','infinitecodeworks.com'].join('@');
+  document.querySelectorAll('[data-em]').forEach(function(el){
+    var a = document.createElement('a');
+    a.href = 'mailto:' + addr;
+    a.textContent = addr;
+    el.textContent = '';
+    el.appendChild(a);
+  });
+
+  // Contact form: posts to an n8n webhook. Set data-webhook on the form
+  // to the production webhook URL; while it is empty the form stays hidden
+  // and the page falls back to email only.
+  var f = document.getElementById('cform');
+  if (!f) return;
+  var hook = f.getAttribute('data-webhook');
+  if (!hook) { f.hidden = true; return; }
+  var status = document.getElementById('cf-status');
+  f.addEventListener('submit', function(e){
+    e.preventDefault();
+    if (document.getElementById('cf-web').value) return; // honeypot
+    var name = document.getElementById('cf-name').value.trim();
+    var email = document.getElementById('cf-email').value.trim();
+    var msg = document.getElementById('cf-msg').value.trim();
+    if (!name || !email || !msg) { status.textContent = 'Please fill in all three fields.'; return; }
+    status.textContent = 'Sending…';
+    fetch(hook, {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({name: name, email: email, message: msg, source: 'infinitecodeworks.com', ts: new Date().toISOString()})
+    }).then(function(r){
+      if (!r.ok) throw new Error(r.status);
+      status.textContent = 'Thank you. Your message has arrived and I reply personally, usually within one working day.';
+      f.reset();
+    }).catch(function(){
+      status.textContent = 'That did not send. Please email me directly: ' + addr;
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
