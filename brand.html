@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ICW Brand Reference</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23123C31'/%3E%3Cg fill='none' stroke='%23F3F4F0' stroke-width='7'%3E%3Ccircle cx='22.4' cy='32' r='12'/%3E%3Ccircle cx='41.6' cy='32' r='12'/%3E%3C/g%3E%3C/svg%3E">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
 <style>
 :root{
@@ -19,9 +21,15 @@ h1,h2,h3{font-family:var(--display);margin:0;line-height:1.15}
 h1{font-size:2rem;letter-spacing:-.015em}
 h2{font-size:1.15rem;color:var(--spruce);padding-bottom:12px;border-bottom:1px solid var(--rule);margin:56px 0 24px}
 p{margin:0 0 14px;max-width:68ch}
-.lockup{margin:40px 0 8px;font-family:var(--display);font-weight:700;font-size:2.6rem;letter-spacing:-.02em}
-.lockup .mark{color:var(--spruce);font-size:1.2em;margin-right:8px;vertical-align:-0.05em}
+.lockup{margin:40px 0 10px;display:flex;align-items:center;gap:18px}
+.lockup svg{height:52px;width:auto}
+.lockup .word{font-family:var(--display);font-weight:700;font-size:2.6rem;letter-spacing:-.02em}
 .sub{color:var(--stone);font-family:var(--display);font-size:.95rem}
+.marks{display:flex;gap:24px;align-items:center;margin:24px 0 8px;flex-wrap:wrap}
+.marks .tile{border-radius:10px;display:flex;align-items:center;justify-content:center}
+.marks .dark{background:var(--spruce-deep);width:96px;height:96px}
+.marks .light{background:#fff;border:1px solid var(--rule);width:96px;height:96px}
+.marks svg{height:44px;width:auto}
 .swatches{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:14px}
 .sw{border:1px solid var(--rule);border-radius:4px;overflow:hidden;background:#fff}
 .sw .chip{height:74px}
@@ -41,11 +49,25 @@ table.rules td:first-child{font-family:var(--display);font-weight:600;width:34%}
 <div class="wrap">
 
   <h1>Infinite Codeworks brand reference</h1>
-  <p class="sub">v1, Sep 2026. Source of truth for the website, email footers and documents.</p>
+  <p class="sub">v2, Sep 2026. Source of truth for the website, email footers, documents and Xero.</p>
 
   <h2>Mark and wordmark</h2>
-  <div class="lockup"><span class="mark">&infin;</span>Infinite Codeworks</div>
-  <p class="sub">The infinity mark in spruce, wordmark in ink, set in Archivo Bold. The mark can stand alone as an avatar or favicon: spruce &infin; on paper, or paper &infin; on deep spruce.</p>
+  <div class="lockup">
+    <svg viewBox="0 0 76 48" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><g fill="none" stroke="#1B5244" stroke-width="11"><circle cx="24.4" cy="24" r="17"/><circle cx="51.6" cy="24" r="17"/></g></svg>
+    <span class="word">Infinite Codeworks</span>
+  </div>
+  <p class="sub">The mark is two interlocked rings reading as an infinity: drawn geometry, never a typed &infin; character. Ring centres sit 1.6 radii apart so the rings kiss with a small clean junction. Stroke weight matches Archivo Bold. Spruce mark with ink wordmark on light grounds; paper mark on deep spruce grounds.</p>
+  <div class="marks">
+    <div class="tile light"><svg viewBox="0 0 76 48" xmlns="http://www.w3.org/2000/svg"><g fill="none" stroke="#1B5244" stroke-width="11"><circle cx="24.4" cy="24" r="17"/><circle cx="51.6" cy="24" r="17"/></g></svg></div>
+    <div class="tile dark"><svg viewBox="0 0 76 48" xmlns="http://www.w3.org/2000/svg"><g fill="none" stroke="#F3F4F0" stroke-width="11"><circle cx="24.4" cy="24" r="17"/><circle cx="51.6" cy="24" r="17"/></g></svg></div>
+  </div>
+  <table class="rules">
+    <tr><td>logo.png</td><td>Full lockup, transparent background. Documents, email signature, presentations on light grounds.</td></tr>
+    <tr><td>logo-xero.png</td><td>Full lockup on white, 1200px wide. Upload to Xero invoice and quote branding.</td></tr>
+    <tr><td>mark.png</td><td>Square: paper rings on deep spruce. Avatars, profile images, app icons.</td></tr>
+    <tr><td>og.jpg</td><td>1200x630 social preview card. Referenced by the website's Open Graph and Twitter tags.</td></tr>
+    <tr><td>SVG mark</td><td>Inline in the website header and favicon: circles r 17 at cx 24.4 and 51.6 in a 76x48 viewBox, stroke 11.</td></tr>
+  </table>
 
   <h2>Colour</h2>
   <div class="swatches">
@@ -65,8 +87,12 @@ table.rules td:first-child{font-family:var(--display);font-weight:600;width:34%}
   </div>
   <div class="type-demo">
     <div class="name">Body: Source Serif 4 (400, 600 for emphasis)</div>
-    <div>Body copy is set in Source Serif 4. In Word or Outlook where it is not installed, use Georgia. For headings where Archivo is unavailable, use Arial Bold. In Xero (invoices and quotes) use Work Sans throughout, the closest available match to Archivo; PT Serif only where a document wants the serif feel.</div>
+    <div>Body copy is set in Source Serif 4. Substitutes where the brand fonts are unavailable are listed below.</div>
   </div>
+  <table class="rules">
+    <tr><td>Word and Outlook</td><td>Arial Bold for headings, Georgia for body.</td></tr>
+    <tr><td>Xero (invoices, quotes)</td><td>Work Sans throughout, the closest available match to Archivo. PT Serif only where a document wants the serif feel. Never Inter.</td></tr>
+  </table>
 
   <h2>Documents (proposals, SoWs, reports)</h2>
   <table class="rules">
@@ -75,6 +101,7 @@ table.rules td:first-child{font-family:var(--display);font-weight:600;width:34%}
     <tr><td>Accent</td><td>Spruce #1B5244 only: rules, table header fills (with paper text), links. Never more than one accent colour per document.</td></tr>
     <tr><td>Tables</td><td>Hairline borders in #D7DAD1, header row deep spruce with paper text.</td></tr>
     <tr><td>Callouts</td><td>Tint #EBEEE7 background with a 3pt spruce left border.</td></tr>
+    <tr><td>Logo</td><td>logo.png top left of page one, roughly 45mm wide. Never stretched, recoloured or set on a busy image.</td></tr>
     <tr><td>Footer</td><td>Stone text: Infinite Codeworks Ltd, registered in England and Wales 07242790.</td></tr>
   </table>
 
